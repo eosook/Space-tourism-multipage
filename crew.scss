@@ -1,0 +1,227 @@
+$font-family: (
+    "header": 'Bellefair',
+    "sub-header": 'Barlow Condensed',
+    "body": 'Barlow'
+);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img, svg, canvas {
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 700px){
+    body{
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    }
+}
+
+@media(min-width: 1200px){
+    body{
+        background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    }
+}
+
+.crew-page{
+    margin: 0 24px;
+    text-align: center;
+
+    &-head{
+        font-family: map-get($font-family, sub-header);
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: white;
+
+        span{
+            color: rgba(255, 255, 255, 0.25);
+        }
+    }
+
+    .crew-pic-divider{
+        margin: 32px 0;
+        border-bottom: 1px solid #383b4b;
+    }
+
+    .crew-pic{
+        width: 177px;
+        height: 222px;
+        margin: 0 auto;
+    }
+
+    .crew-dots{
+        display: flex;
+        margin: 0 auto 32px;
+        justify-content: space-between;
+        width: 88px;
+
+        .dot{
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.17)
+        }
+
+        .current-dot{
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    .crew-title{
+        font-family: map-get($font-family, header);
+        font-size: 16px;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.50);
+        text-transform: uppercase;
+    }
+
+    .crew-name{
+        font-family: map-get($font-family, header);
+        font-size: 24px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: white;
+        margin: 8px 0 16px;
+    }
+
+    .crew-info{
+        font-family: map-get($font-family, body);
+        font-size: 15px;
+        color: #D0D6F9;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 700px){
+    .crew-page{
+        margin: 40px 38px;
+
+        &-head{
+            text-align: left;
+            font-size: 20px;
+            letter-spacing: 3.38px;
+        }
+
+        .crew-pic-divider{
+            position: fixed;
+            margin-left: calc(50% - 225px);
+            bottom: -100px;
+        }
+
+        .crew-pic{
+            height: 500px;
+            width: 400px;
+        }
+
+        .crew-page-body{
+            position: relative;
+            margin: 60px auto 40px;
+            height: 270px;
+            width: 520px;
+        }
+
+        .crew-dots{
+            position: absolute;
+            margin-left: calc(50% - 44px);
+            bottom: 0;
+        }
+
+        .crew-title{
+            font-size: 24px;
+        }
+
+        .crew-name{
+            font-size: 40px;
+        }
+
+        .crew-info{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .crew-page{
+        margin: 75px 165px;
+        text-align: left;
+
+        &-head{
+            font-size: 28px;
+            letter-spacing: 4.72px;
+        }
+
+        .crew-title{
+            font-size: 32px;
+        }
+
+        .crew-dots{
+            margin-left: 0;
+            width: 132px;
+
+            .dot{
+                width: 15px;
+                height: 15px;
+                border-radius: 8px;
+            }
+        }
+    
+        .crew-name{
+            font-size: 56px;
+            margin: 15px 0 27px;
+        }
+
+        .crew-page-body{
+            width: auto;
+            height: 400px;
+            margin: 154px auto 94px;
+        }
+
+        .crew-info{
+            width: 444px;
+            line-height: 32px;
+            font-size: 18px;
+        }
+
+        .crew-pic-divider{
+            overflow: hidden;
+            border-bottom: none;
+        }
+
+        .crew-pic{
+            margin-left: 100px;
+        }
+
+        .commander-pic{
+            height: 712px;
+            width: 550px;
+        }
+
+        .specialist-pic{
+            height: 654px;
+            width: 453px;
+        }
+
+        .pilot-pic{
+            height: 681px;
+            width: 554px;
+        }
+
+        .engineer-pic{
+            height: 607px;
+            width: 615px;
+        }
+    }
+}

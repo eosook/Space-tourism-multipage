@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/topBarStyles.css">
+  <link rel="stylesheet" href="dist/css/crew.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="top-bar">
+    <img class="space-logo" src="assets/shared/logo.svg" alt="space website logo">
+    <img class="menu-logo" id="menu-open" src="assets/shared/icon-hamburger.svg" alt="menu logo">
+    <div class="menu" id="menu">
+      <a class="close-button"><img class="menu-close" id="menu-close" src="assets/shared/icon-close.svg" alt="close menu"></a>
+      <ul>
+        <button class="section-button" onclick="location.href='index.html'"><span>00 </span>HOME</button>
+        <button class="section-button" onclick="location.href='destination-moon.html'"><span>01 </span>DESTINATION</button>
+        <button class="section-button  current-section"><span>02 </span>CREW</button>
+        <button class="section-button" onclick="location.href='technology-vehicle.html'"><span>03 </span>TECHNOLOGY</button>
+      </ul>
+    </div>
+  </div>
+  <div class="crew-page">
+    <h1 class="crew-page-head"><span>02</span> Meet your crew</h1>
+    <div class="crew-pic-divider">
+      <img class="crew-pic pilot-pic" src="assets/crew/image-victor-glover.png" alt="Douglas Hurley">
+    </div>
+    <div class="crew-page-body">
+      <div class="crew-dots">
+        <a class="dot" href="crew-commander.html"></a>
+        <a class="dot" href="crew-engineer.html"></a>
+        <a class="dot current-dot" href="crew-pilot.html"></a>
+        <a class="dot" href="crew-specialist.html"></a>
+      </div>
+      <h3 class="crew-title">Pilot</h3>
+      <h2 class="crew-name">Victor Glover</h2>
+
+      <p class="crew-info">
+          Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+      International Space Station. Glover is a commander in the U.S. Navy where 
+      he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+      station systems flight engineer. 
+      </p>
+    </div>
+  </div>
+  <script src="menu.js"></script>
+</body>
+</html>

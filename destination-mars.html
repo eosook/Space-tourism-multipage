@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/topBarStyles.css">
+  <link rel="stylesheet" href="dist/css/destinationStyle.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div class="top-bar">
+    <img class="space-logo" src="assets/shared/logo.svg" alt="space website logo">
+    <img class="menu-logo" id="menu-open" src="assets/shared/icon-hamburger.svg" alt="menu logo">
+    <div class="menu" id="menu">
+      <a class="close-button"><img class="menu-close" id="menu-close" src="assets/shared/icon-close.svg" alt="close menu"></a>
+      <ul>
+        <button class="section-button" onclick="location.href='index.html'"><span>00 </span>HOME</button>
+        <button class="section-button  current-section" onclick="location.href='destination-moon.html'"><span>01 </span>DESTINATION</button>
+        <button class="section-button" onclick="location.href='crew-commander.html'"><span>02 </span>CREW</button>
+        <button class="section-button"><span>03 </span>TECHNOLOGY</button>
+      </ul>
+    </div>
+  </div>
+  <h1 class="destination-main-header">
+    <span>01</span> Pick your destination
+  </h1>
+  <div class="destination-page">
+    <div class="destination-main">
+      <img class="destination-image" src="assets/destination/image-mars.png" alt="Moon Image">
+    </div>
+    <div class="destination-content">
+      <div class="destination-bar">
+        <a class="destination-bar-name other-destination" href="destination-moon.html">Moon</a>
+        <a class="destination-bar-name current-destination" href="destination-mars.html">Mars</a>
+        <a class="destination-bar-name other-destination" href="destination-europa.html">Europa</a>
+        <a class="destination-bar-name other-destination" href="destination-titan.html">Titan</a>
+      </div>
+      <h2 class="destination-name">Mars</h1>
+      <p class="destination-body">
+        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+        the tallest planetary mountain in our solar system. It’s two and a half times 
+        the size of Everest!
+      </p>
+      <div class="destination-info">
+        <div class="destination-info-distance">
+          <h3 class="destination-info-type">Avg. distance</h3>
+          <p class="destination-info-body">225 mil. km</p>
+        </div>
+        <div class="destination-info-travel">
+          <h3 class="destination-info-type">Est. travel time</h3>
+          <p class="destination-info-body">9 months</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, svg, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Body/Background-image Styles */
+body {
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  }
+}
+.destination-page {
+  padding: 0 24px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .destination-page {
+    padding: 0 38.5px;
+  }
+}
+@media (min-width: 1200px) {
+  .destination-page {
+    padding: 0 165px;
+    display: flex;
+    justify-content: space-between;
+    margin: 76px auto;
+  }
+}
+/* Header + Planet image Styles */
+.destination-main-header {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.7px;
+  color: white;
+}
+.destination-main-header span {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.25);
+}
+.destination-main .destination-image {
+  height: 170px;
+  width: 170px;
+  margin: 32px auto 26px;
+}
+
+@media (min-width: 700px) {
+  .destination-main {
+    margin-top: 40px;
+  }
+  .destination-main-header {
+    text-align: left;
+    font-size: 20px;
+    margin: 40px 0 0 39px;
+  }
+  .destination-main .destination-image {
+    height: 300px;
+    width: 300px;
+    margin: 60px auto 53px;
+  }
+}
+@media (min-width: 1200px) {
+  .destination-main {
+    margin-top: 0;
+  }
+  .destination-main-header {
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin: 76px 0 0 166px;
+  }
+  .destination-main .destination-image {
+    height: 445px;
+    width: 445px;
+    margin-left: 63px;
+  }
+}
+/* Body / Destination Info */
+.destination-content {
+  color: #D0D6F9;
+  padding-bottom: max(50px, 5%);
+}
+.destination-content .destination-bar {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+}
+.destination-content .destination-bar .current-destination {
+  border-bottom: 3px solid white;
+}
+.destination-content .destination-bar .other-destination:hover {
+  border-bottom: 3px solid grey;
+}
+.destination-content .destination-bar a {
+  text-decoration: none;
+  color: white;
+}
+.destination-content .destination-name {
+  font-family: "Bellefair";
+  font-size: 56px;
+  font-weight: normal;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.destination-content .destination-body {
+  font-family: "Barlow";
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+.destination-content .destination-info-type {
+  font-family: "Barlow Condensed";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+.destination-content .destination-info-body {
+  font-family: "Bellefair";
+  color: white;
+  font-size: 28px;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .destination-content .destination-bar {
+    max-width: 285px;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .destination-content .destination-name {
+    font-size: 80px;
+    margin-bottom: 8px;
+  }
+  .destination-content .destination-body {
+    max-width: 573px;
+    font-size: 16px;
+    margin: auto;
+    padding-bottom: 49px;
+  }
+  .destination-content .destination-info {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 1200px) {
+  .destination-content {
+    text-align: left;
+    width: min(445px, 40%);
+  }
+  .destination-content .destination-bar {
+    margin: 0;
+  }
+  .destination-content .destination-info {
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=destinationStyle.css.map */
